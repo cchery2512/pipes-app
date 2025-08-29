@@ -1,10 +1,11 @@
 import { DatePipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component, effect, inject, LOCALE_ID, signal } from '@angular/core';
 import { AvailableLocale, LocaleService } from '../../services/locale.service';
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-basic-page',
-  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, DatePipe],
+  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, DatePipe, FooterComponent],
   templateUrl: './basic-page.component.html',
 })
 export default class BasicPageComponent {
@@ -27,8 +28,4 @@ export default class BasicPageComponent {
       clearInterval(interval);
     });
   });
-
-  changeLocale(locale: AvailableLocale){
-    this.localeService.changeLocale(locale);
-  }
 }

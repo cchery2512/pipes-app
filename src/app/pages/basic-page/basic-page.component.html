@@ -77,11 +77,4 @@
   </div>
 </div>
 
-<div class="flex flex-row gap-2">
-  <h1 class="text-2xl font-bold">Locale Actual:
-    <span class="badge badge-secondary">{{ localeService.getLocale() | uppercase }}</span>
-  </h1>
-  <button (click)="changeLocale('fr')" class="btn btn-primary">Changer en français</button>
-  <button (click)="changeLocale('en')" class="btn btn-primary">Changer to English</button>
-  <button (click)="changeLocale('es')" class="btn btn-primary">Cambiar a Spanish</button>
-</div>
+<app-footer/>

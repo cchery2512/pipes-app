@@ -1,9 +1,10 @@
 import { CurrencyPipe, DecimalPipe, PercentPipe } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-numbers-page',
-  imports: [DecimalPipe, PercentPipe, CurrencyPipe],
+  imports: [DecimalPipe, PercentPipe, CurrencyPipe, FooterComponent],
   templateUrl: './numbers-page.component.html',
   styles: ``
 })
